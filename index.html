@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="shortcut icon" href="assets/Prancheta – 1.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Task<span>Master</span></h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="welcome-section">
+            <h2>Bem-vindo!</h2>
+            <p>Feito é melhor que perfeito, então comece já a organizar sua rotina ;)</p>
+        </section>
+
+        <section class="task-input">
+            <input type="text" placeholder="Nova tarefa..." id="new-task">
+            <select id="task-type">
+                <option value="pessoal">Pessoal</option>
+                <option value="trabalho">Trabalho</option>
+                <option value="urgente">Urgente</option>
+            </select>
+            <button id="add-task">Adicionar</button>
+        </section>
+
+        <section class="task-categories">
+            <div class="task-category pessoal">
+                <h3>Pessoal 🏠</h3>
+                <ul id="tarefas-pessoal"></ul>
+            </div>
+            <div class="task-category trabalho">
+                <h3>Trabalho 🖥️</h3>
+                <ul id="tarefas-trabalho"></ul>
+            </div>
+            <div class="task-category urgente">
+                <h3>Urgente 🚨</h3>
+                <ul id="tarefas-urgente"></ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 TaskMaster. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script/tarefas.js"></script>
+</body>
+</html>
